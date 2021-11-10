@@ -1,0 +1,365 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 1440px;
+    min-height:  550px;
+    line-height: 24px;
+    font-family: "Arial", sans-serif;
+    color: #404040;
+    background-color: white;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 185px;
+    box-sizing: border-box;
+}
+
+.container1 {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.page-header {
+    display: flex;
+    height: 60px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    width: 200px;
+    height: 40px;
+
+}
+
+.nav .main-nav {
+    display: flex;
+    flex: 1;
+    list-style:none;
+    height: 32px;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+
+.main-nav .menu {
+    text-decoration: none;
+    font-family: DM Sans, serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: #696871;
+    margin-left: 49px;
+}
+
+.main-nav .menu {
+    font-style: normal;
+}
+
+.main-nav .menu:hover {
+    border-bottom: 2px solid #5454D4;
+    padding-bottom: 10px;
+}
+
+.main-nav .menu:active {
+    font-weight: bold;
+    color: black;
+    font-size: medium;
+}
+
+.page-header .btn {
+    margin-left: 159px;
+    text-decoration: none;
+    color: white;
+    font-family: DM Sans,serif;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    padding:19px 60px 19px 59px;
+    background: #FF7143;
+    border-radius: 10px;
+}
+
+.busi {
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.section-title {
+    font-family: DM Sans, serif;
+    font-style: normal;
+    font-size: 80px;
+    line-height: 77px;
+        color: #19191B;
+}
+
+.section-title1 {
+    font-family: DM Sans, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 57px;
+    color: #19191B;
+
+}
+
+.section-title2{
+    font-family: DM Sans, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1.87579px;
+    color: #19191B;
+}
+
+.title {
+    font-family: Mulish,serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #696871;
+}
+.subs .btn {
+    position: relative;
+    top: 50px;
+    text-decoration: none;
+    color: white;
+    font-family: DM Sans,serif;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 22px;
+    padding:19px 60px 19px 59px;
+    background:rgba(84, 84, 212, 1);
+    border-radius: 10px;
+    flex-direction: row;
+}
+.hero {
+    width: 580px;
+    height: 644px;
+}
+.subs img {
+    position: relative;
+    top: 10px;
+    left: 250px;
+    border: 1px solid rgba(231, 231, 231, 1);
+    padding: 18px 19px 18px 19px;
+    border-radius: 50%;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 201px;
+}
+
+.index {
+    display: flex;
+    margin-top: 160px;
+    justify-content: space-between;
+}
+
+.subs1 {
+    margin-right: 136px;
+    margin-top: 80px;
+}
+
+.subs1 .more{
+    text-decoration: none;
+    font-family: DM Sans, serif;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.531474px;
+    color: #5454D4;
+}
+.subs2 {
+   margin-top: 132px;
+}
+
+.subs2 .more {
+    text-decoration: none;
+    font-family: DM Sans, serif;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.531474px;
+    color: #5454D4;
+}
+
+.hero3 {
+    margin-right: 130px;
+
+}
+
+.service_card {
+    display: flex;
+    margin-top: 138px;
+    justify-content: space-between;
+}
+.plan {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.plan .right-plan {
+    margin-top: 80px;
+    margin-left: 222px;
+    width: 346px;
+    height: 65px;
+    border: 1px solid #F7F7FB;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #F7F7FB;
+}
+
+.right-plan .change {
+    background-color:  #F7F7FB;
+    border: 1px solid #F7F7FB;
+    display: inline-block;
+    padding: 18px 60px 20px 60px;
+    margin-top: 2px;
+    color: #19191B;
+    font-family: DM Sans, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.500211px;
+
+}
+
+.right-plan .change:nth-child(2) {
+    margin-left: -5px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.right-plan .change:first-child {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.right-plan .change:hover {
+    color: #F7F7FB;
+    background-color:rgba(84, 84, 212, 1);
+}
+
+.right-plan .change:active {
+    color: black;
+    background-color:rgba(84, 84, 212, 1);
+}
+
+
+.price {
+    display: flex;
+    margin-top: 98px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.price-title {
+    font-family: DM Sans,serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: -1.03448px;
+    color: #1D293F;
+}
+
+
+
+.price .price-title1 {
+    font-family: DM Sans, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.562737px;
+
+    color: #696871;
+
+}
+
+.price_card {
+    border: 1px solid #F7F7FB;
+    width: 330px;
+    height: 441px;
+    background-color: #F7F7FB;
+    border-radius: 10px;
+}
+.price .btn1 {
+    position: relative;
+    top: 50px;
+    text-decoration: none;
+    width: 300px;
+    height: 22px;
+    color:rgba(84, 84, 212, 1) ;
+    font-family: DM Sans, serif;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.531474px;
+    border: 1px solid #F7F7FB;
+    padding: 19px 42px 40px 42px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+}
+.price_card:hover{
+    cursor: pointer;
+    background: #FF7143;
+    box-shadow: 1px 32px 34px rgba(255, 112, 59, 0.317827);
+}
+.price_card:hover .price-title1, .price_card:hover .price-title{
+    background: #FF7143;
+    box-shadow: 1px 32px 34px rgba(255, 112, 59, 0.317827);
+    color: white;
+}
+.price_card:hover .btn1 {
+    color: white;
+    background-color: #9F3919;
+    border-color:#9F3919;
+    cursor: pointer;
+}
+
+.btn1:active {
+    animation: bounce 1s;
+    color: #19191B;
+    background-color: aqua;
+}
+
