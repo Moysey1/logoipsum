@@ -53,7 +53,7 @@ for (let changeButton of changeButtons ) {
             document.getElementById('enterprise').classList.remove('active_card');
             console.log('Название выбранного тарифа : ' + document.getElementById('name_premium').innerText);
             console.log('Месячная стоимость: ' + document.getElementById('price_premium').innerText);
-            yearPrice= Number(document.getElementById('price_premium')) * 12;
+            yearPrice = parseInt('document.getElementById[price_premium]',10)*12;
             console.log('Годовая стоимость: ' + '$'+yearPrice+'/moth');
         }
         if (e.target.id === 'enter') {
@@ -62,6 +62,10 @@ for (let changeButton of changeButtons ) {
             document.getElementById('starter').classList.remove('active_card');
             console.log('Название выбранного тарифа : ' + document.getElementById('name_enterprise').innerText);
             console.log('Месячная стоимость: ' + document.getElementById('price_enterprise').innerText);
-        }
-    })}
+
+
+
+
+
+        }})}
 
