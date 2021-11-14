@@ -9,6 +9,16 @@ body {
     background-color: white;
 }
 
+button:disabled {
+    color: white;
+    background-color: red;
+}
+
+.block_link {
+    pointer-events: none;
+    cursor: default;
+}
+
 .container {
     width: 1440px;
     margin: 0 auto;
@@ -16,16 +26,6 @@ body {
     box-sizing: border-box;
 }
 
-.container1 {
-    width: 800px;
-    margin: 0 auto;
-}
-
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 .page-header {
     display: flex;
@@ -46,17 +46,17 @@ body {
 
 }
 
-.nav .main-nav {
+.main-nav {
     display: flex;
     flex: 1;
-    list-style:none;
+    list-style: none;
     height: 32px;
-    justify-content: space-between;
+    justify-content: center;
     padding-left: 0;
+    margin-left: 60px;
 }
 
-
-.main-nav .menu {
+.menu {
     text-decoration: none;
     font-family: DM Sans, serif;
     font-size: 15px;
@@ -65,22 +65,23 @@ body {
     margin-left: 49px;
 }
 
-.main-nav .menu {
+ .menu {
     font-style: normal;
 }
 
-.main-nav .menu:hover {
+.menu:hover {
     border-bottom: 2px solid #5454D4;
     padding-bottom: 10px;
 }
 
-.main-nav .menu:active {
+.menu:active {
     font-weight: bold;
     color: black;
     font-size: medium;
 }
 
-.page-header .btn {
+
+.btn {
     margin-left: 159px;
     text-decoration: none;
     color: white;
@@ -93,6 +94,16 @@ body {
     background: #FF7143;
     border-radius: 10px;
 }
+button:hover {
+    background-color: white;
+    color: #19191B;
+}
+
+button:active {
+    background-color: #19191B;
+    color: #9F3919;
+
+}
 
 .busi {
     display: flex;
@@ -102,7 +113,7 @@ body {
 }
 
 
-.section-title {
+.title {
     font-family: DM Sans, serif;
     font-style: normal;
     font-size: 80px;
@@ -110,7 +121,7 @@ body {
         color: #19191B;
 }
 
-.section-title1 {
+.caption {
     font-family: DM Sans, serif;
     font-style: normal;
     font-weight: bold;
@@ -120,7 +131,7 @@ body {
 
 }
 
-.section-title2{
+.headline{
     font-family: DM Sans, serif;
     font-style: normal;
     font-weight: bold;
@@ -130,7 +141,7 @@ body {
     color: #19191B;
 }
 
-.title {
+.subtitle {
     font-family: Mulish,serif;
     font-style: normal;
     font-weight: normal;
@@ -138,7 +149,7 @@ body {
     line-height: 30px;
     color: #696871;
 }
-.subs .btn {
+.button {
     position: relative;
     top: 50px;
     text-decoration: none;
@@ -155,11 +166,12 @@ body {
 .hero {
     width: 580px;
     height: 644px;
+    margin-right: -45px;
 }
-.subs img {
+.arrow {
     position: relative;
-    top: 10px;
-    left: 250px;
+    top: 80px;
+    left: 40px;
     border: 1px solid rgba(231, 231, 231, 1);
     padding: 18px 19px 18px 19px;
     border-radius: 50%;
@@ -182,7 +194,7 @@ body {
     margin-top: 80px;
 }
 
-.subs1 .more{
+.more{
     text-decoration: none;
     font-family: DM Sans, serif;
     font-style: normal;
@@ -191,19 +203,21 @@ body {
     letter-spacing: -0.531474px;
     color: #5454D4;
 }
+
+.more:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.more:active {
+    color: black;
+    opacity: 0.5;
+}
+
 .subs2 {
    margin-top: 132px;
 }
 
-.subs2 .more {
-    text-decoration: none;
-    font-family: DM Sans, serif;
-    font-style: normal;
-    font-size: 17px;
-    line-height: 22px;
-    letter-spacing: -0.531474px;
-    color: #5454D4;
-}
 
 .hero3 {
     margin-right: 130px;
@@ -221,7 +235,7 @@ body {
     margin-top: 50px;
 }
 
-.plan .right-plan {
+.right-plan {
     margin-top: 80px;
     margin-left: 222px;
     width: 346px;
@@ -232,7 +246,7 @@ body {
     background-color: #F7F7FB;
 }
 
-.right-plan .change {
+.change {
     background-color:  #F7F7FB;
     border: 1px solid #F7F7FB;
     display: inline-block;
@@ -248,23 +262,24 @@ body {
 
 }
 
-.right-plan .change:nth-child(2) {
+.change:nth-child(2) {
     margin-left: -5px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.right-plan .change:first-child {
+.change:first-child {
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
 }
 
-.right-plan .change:hover {
+.change:hover {
     color: #F7F7FB;
     background-color:rgba(84, 84, 212, 1);
+    cursor: pointer;
 }
 
-.right-plan .change:active {
+.change:active {
     color: black;
     background-color:rgba(84, 84, 212, 1);
 }
@@ -277,7 +292,7 @@ body {
     justify-content: space-between;
 }
 
-.price-title {
+.heading {
     font-family: DM Sans,serif;
     font-style: normal;
     font-weight: bold;
@@ -290,7 +305,7 @@ body {
 
 
 
-.price .price-title1 {
+.price .slogan {
     font-family: DM Sans, serif;
     font-style: normal;
     font-weight: normal;
@@ -310,7 +325,7 @@ body {
     background-color: #F7F7FB;
     border-radius: 10px;
 }
-.price .btn1 {
+.btn1 {
     position: relative;
     top: 50px;
     text-decoration: none;
@@ -345,7 +360,7 @@ body {
     background: #FF7143;
     box-shadow: 1px 32px 34px rgba(255, 112, 59, 0.317827);
 }
-.price_card:hover .price-title1, .price_card:hover .price-title{
+.price_card:hover .slogan, .price_card:hover .heading{
     background: #FF7143;
     box-shadow: 1px 32px 34px rgba(255, 112, 59, 0.317827);
     color: white;
